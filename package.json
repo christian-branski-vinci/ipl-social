@@ -1,17 +1,27 @@
 {
   "name": "ipl-social",
   "version": "1.0.0",
-  "description": "Examen janvier",
-  "main": "index.js",
+  "description": "Email validator with TDD (TypeScript) for IPL Social",
+  "main": "dist/emailValidator.js",
+  "types": "dist/emailValidator.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christian-branski-vinci/ipl-social.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "email",
+    "validation",
+    "tdd",
+    "typescript",
+    "jest"
+  ],
+  "author": "Christian Branski <christian.branski@student.vinci.be>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/christian-branski-vinci/ipl-social/issues"
