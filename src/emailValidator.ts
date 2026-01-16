@@ -13,6 +13,10 @@ function validateEmail(email:string) : boolean{
     if (email.endsWith('.')){
         return false;
     }
+
+    if(email.includes(' ')){
+        return false;
+    }
     return true;
 }
 
