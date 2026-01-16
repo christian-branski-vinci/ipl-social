@@ -5,6 +5,9 @@ function validateEmail(email:string) : boolean{
 
     const index = email.indexOf('@');
     const partie= email.substring(index+1);
+    if(index===0){
+        return false
+    }
 
     if (!partie.includes('.')){
         return false;
